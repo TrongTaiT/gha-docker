@@ -13,6 +13,12 @@ const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
 
+console.log(connectionProtocol);
+console.log(clusterAddress);
+console.log(dbUser);
+console.log(dbPassword);
+console.log(dbName);
+
 try {
   await client.connect();
   await client.db(dbName).command({ ping: 1 });
@@ -21,6 +27,7 @@ try {
   console.log('Connection failed.');
   await client.close();
   console.log('Connection closed.');
+  console.log(error);
   process.exit(1);
 }
 
