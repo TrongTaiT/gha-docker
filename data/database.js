@@ -8,7 +8,7 @@ const dbName = process.env.MONGODB_DB_NAME;
 
 // mongodb+srv://taint47fsoft:<password>@cluster0.5lnqd2w.mongodb.net/?retryWrites=true&w=majority
 // const uri = `${connectionProtocol}://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
-const uri = 'mongodb+srv://taint47fsoft:<password>@cluster0.5lnqd2w.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://taint47fsoft:trongtai@cluster0.5lnqd2w.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
